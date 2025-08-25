@@ -1,0 +1,3 @@
+C:/Programming/c_and_cpp/UCHEBA/ManyAlgorithms/build/CMakeFiles/MyFunnyLibrary.dir
+C:/Programming/c_and_cpp/UCHEBA/ManyAlgorithms/build/CMakeFiles/edit_cache.dir
+C:/Programming/c_and_cpp/UCHEBA/ManyAlgorithms/build/CMakeFiles/rebuild_cache.dir

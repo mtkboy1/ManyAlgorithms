@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\MyFunnyLibrary.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\MyFunnyLibrary.dir/objects.a @CMakeFiles\MyFunnyLibrary.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\MyFunnyLibrary.dir/objects.a -Wl,--no-whole-archive -o MyFunnyLibrary.exe -Wl,--out-implib,libMyFunnyLibrary.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\MyFunnyLibrary.dir\linkLibs.rsp
