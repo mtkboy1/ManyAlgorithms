@@ -2,13 +2,13 @@
 
 void init(struct queue* q){
     q->size = 0;
-    q->st = calloc(q->size,sizeof(int));
+    q->st = (int*) calloc(q->size,sizeof(int));
 }
 void add(int i, struct queue* q){
     struct queue new_q;
     //new_q.st = calloc(q->size,sizeof(int));
     //printf("\n%i",q->st[0]);
-    new_q.st = realloc(q->st,sizeof(int)*(q->size+1));
+    new_q.st = (int*) realloc(q->st,sizeof(int)*(q->size+1));
     new_q.size = q->size;
     new_q.size++;
     new_q.st[q->size] = i;
@@ -19,9 +19,9 @@ void add(int i, struct queue* q){
 }
 void removeFrist(struct queue* q){
     struct queue new_q;
-    new_q.st = calloc(q->size,sizeof(int));
+    new_q.st = (int*) calloc(q->size,sizeof(int));
     //printf("\n%i",q->st[0]);
-    new_q.st = realloc(q->st,sizeof(int)*(q->size-1));
+    new_q.st = (int*) realloc(q->st,sizeof(int)*(q->size-1));
     new_q.size = q->size;
     //new_q.st[q->size] = i;
     *q = new_q;

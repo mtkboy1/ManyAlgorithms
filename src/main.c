@@ -19,27 +19,17 @@ int main(){
             scanf("%i", &mas[i][j]);
         }
     }
-    /*printf("\n");
-    for(int i = 0; i<z; i++){
-        for(int j = 0; j<z; j++){
-            printf("%i ",mas[i][j]);
-        }
-        printf("\n");
-    }*/
-    /*int* x = calloc(sizeof(int),1);
-    int* y = calloc(sizeof(int),1);*/
-    //scanf("%i", x);
-    //printf("%i",x);
-    //scanf("%i", y);
+    int x;
+    int y;
+    scanf("%i", &x);
+    scanf("%i", &y);
     struct queue q;
     init(&q);
     struct queue s;
     init(&s);
-    //printf("%i",x);
-    /*free(x);
-    free(y);*/
-
-    printf("\n%i",WidthSteps(mas,v,z,2,4,&q,&s));
+    /*printf("\n%i",x);
+    printf("\n%i",y);*/
+    printf("\n%i",WidthSteps(mas,v,z,x-1,y-1,&q,&s));
     for(int i = 0; i<z; i++){
         free(mas[i]);
     }

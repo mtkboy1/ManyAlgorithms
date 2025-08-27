@@ -1,6 +1,9 @@
 #include"Width.h"
 
 int WidthSteps(int** graph, int* visited, int size, int from, int to, struct queue *q, struct queue *steps){
+    if(from==to){
+        return 0;
+    }
     int step = 0;
     char finished = 0;
     add(from,q);
