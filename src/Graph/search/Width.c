@@ -34,4 +34,5 @@ int WidthSteps(int** graph, int* visited, int size, int from, int to, struct que
         removeFrist(q);
         removeFrist(steps);
     }
+    return -1;
 }
