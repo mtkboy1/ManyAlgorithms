@@ -37,3 +37,6 @@ int getLast(struct queue* q){
 int getFrist(struct queue* q){
     return q->st[0];
 }
+void deInit(struct queue* q){
+    free(q->st);
+}
